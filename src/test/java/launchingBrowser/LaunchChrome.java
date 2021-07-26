@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LaunchChrome {
 	public static void main(String[] args) {
-//		System.setProperty("WebDriver.gecko.driver", "/LaunchBrowser/drivers/chromedriver.exe");
+		System.setProperty("WebDriver.gecko.driver", "/LaunchBrowser/drivers/chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
